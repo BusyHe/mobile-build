@@ -1,6 +1,6 @@
 # mobile-build
 
-> A Vue.js project
+> 移动端初始化工程
 
 ## Build Setup
 

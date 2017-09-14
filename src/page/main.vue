@@ -18,6 +18,9 @@
         created() {
         },
         mounted() {
+            this.$message.success('....')
+            this.$message.success('....')
+            this.$message.success('....')
         },
         methods: {}
     }

@@ -6,25 +6,25 @@ import axios from 'axios'
 import qs from 'qs'
 import NProgress from 'nprogress'
 
-// // 添加请求拦截器
-// axios.interceptors.request.use(function (config) {
-//     NProgress.start()
-//     return config
-// }, function (error) {
-//     return Promise.reject(error)
-// });
-//
-// // 添加返回拦截器
-// axios.interceptors.response.use(function (res) {
-//     NProgress.done();
-//     return res
-// }, function (error) {
-//     NProgress.done();
-//     return Promise.reject(error)
-// });
+// 添加请求拦截器
+axios.interceptors.request.use(function (config) {
+    NProgress.start()
+    return config
+}, function (error) {
+    return Promise.reject(error)
+});
 
-// let baseUrl = '/api';
+// 添加返回拦截器
+axios.interceptors.response.use(function (res) {
+    NProgress.done();
+    return res
+}, function (error) {
+    NProgress.done();
+    return Promise.reject(error)
+});
 
-// export const hello = () => {
-//     return axios.post(baseUrl, qs.stringify({})).then(res => res.data)
-// }
+let baseUrl = '/api';
+
+export const hello = () => {
+    return axios.post(baseUrl, qs.stringify({})).then(res => res.data)
+}
