@@ -9,7 +9,7 @@
 </template>
 <script>
     export default {
-        name: '',
+        name: 'main',
         data() {
             return {}
         },
@@ -18,9 +18,6 @@
         created() {
         },
         mounted() {
-            this.$message.success('....')
-            this.$message.success('....')
-            this.$message.success('....')
         },
         methods: {}
     }

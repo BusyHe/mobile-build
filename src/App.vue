@@ -6,10 +6,19 @@
 
 <script>
     export default {
-        name: 'app'
+        name: 'app',
+        data() {
+            return {}
+        },
+        props: [''],
+        components: {},
+        created() {
+        },
+        mounted() {
+        },
+        methods: {}
     }
 </script>
 
-<style>
-
+<style lang="stylus" rel="stylesheet/stylus" type="text/stylus">
 </style>
